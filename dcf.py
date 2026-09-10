@@ -151,6 +151,11 @@ def main():
 
     print_sensitivity()
     print_reverse_dcf()
+    print("\nEli Lilly conditional call")
+    print("Watch-defer. Initiate if the growth implied by Lilly's share price "
+          "is supported by Mounjaro and Zepbound sales growth after accounting "
+          "for pricing pressure and manufacturing investment; otherwise, defer.")
+    print("Monitor: next quarter's combined Mounjaro and Zepbound revenue growth.")
 
 
 if __name__ == "__main__":
