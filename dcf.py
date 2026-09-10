@@ -153,6 +153,10 @@ def print_reverse_dcf(inputs=TRAINING_INPUTS, target=TARGET_SHARE_PRICE):
     print(f"Solved uniform growth shift (percentage points): {100 * shift:+.8f}")
     print(f"Value per diluted share at solved shift (USD): "
           f"{share_value(WACC, TERMINAL_GROWTH, shift, inputs):.4f}")
+    print("Price-implied annual FCFF growth rates (Years 1-5): "
+          + ", ".join(f"{growth + shift:.4%}" for growth in GROWTH_RATES))
+    print("Interpretation: this is one set of assumptions consistent with the price, "
+          "not proof of mispricing.")
 
 
 def main(inputs=TRAINING_INPUTS, target=TARGET_SHARE_PRICE):
